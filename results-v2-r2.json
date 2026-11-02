@@ -1,0 +1,600 @@
+{
+  "summary": {
+    "variant": "v2",
+    "n": 30,
+    "success_rate": 0.833,
+    "tool_coverage": 0.9,
+    "tool_exact": 0.9,
+    "answer_accuracy": 0.9,
+    "avg_steps": 2.07,
+    "parse_failures": 0,
+    "elapsed_s": 126.3,
+    "model": "qwen2.5:7b"
+  },
+  "rows": [
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "订单A2012购买了人体工学椅，花费了999元。",
+      "id": "t01",
+      "question": "订单 A2012 买的是什么商品，花了多少钱？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 3.1
+    },
+    {
+      "answer_ok": false,
+      "missing": [
+        "2026-10-05"
+      ],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": false,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "您的订单A2001的耳机是在2026年10月2日被签收的。",
+      "id": "t02",
+      "question": "订单 A2001 的耳机是哪天签收的？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 3.6
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "最贵的商品是笔记本电脑，价格为5299元。",
+      "id": "t03",
+      "question": "所有订单里最贵的商品是什么，多少钱？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 2.6
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "当前有3笔订单还在运输中。",
+      "id": "t04",
+      "question": "现在有几笔订单还在运输中？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 2.0
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "已签收订单的总金额为16109.0元。",
+      "id": "t05",
+      "question": "已签收的订单总金额是多少？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 2.8
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "北京客户共有3笔订单，合计金额为3297元。",
+      "id": "t06",
+      "question": "北京客户一共有几笔订单，合计多少钱？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 3.0
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "上海客户的订单号为A2002、A2014、A2026。",
+      "id": "t07",
+      "question": "上海的客户下过哪几个订单号？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 3.5
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "所有订单的平均金额是702.33元。",
+      "id": "t08",
+      "question": "所有订单的平均金额是多少？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 2.5
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "已退款和退货中的订单总额为4256.0元。",
+      "id": "t09",
+      "question": "已退款和退货中的订单加起来的总额是多少？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 2.9
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "已经退款的订单有两笔，分别是订单号A2004的空气炸锅和订单号A2021的平板电脑。",
+      "id": "t10",
+      "question": "哪几笔订单已经退款了，分别是什么商品？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 4.2
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "深圳目前有3笔订单。",
+      "id": "t11",
+      "question": "深圳的订单有几笔？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 2.4
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "当前处于退货中的订单号是A2007和A2016。",
+      "id": "t12",
+      "question": "现在处于退货中的订单号是哪几个？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 3.2
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "您的订单A2011已取消。",
+      "id": "t13",
+      "question": "订单 A2011 现在是什么状态？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 3.0
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "您的订单A2030目前处于运输中状态。",
+      "id": "t14",
+      "question": "订单 A2030 现在到哪一步了？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 3.2
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "search_policy"
+      ],
+      "parse_failures": 0,
+      "answer": "根据我们的售后政策，七天无理由退货的退回运费由消费者承担。您可以选择自行寄回或使用平台上门取件服务，上门取件费用将从退款中扣除。",
+      "id": "t15",
+      "question": "七天无理由退货的退回运费由谁承担？",
+      "expected": [
+        "search_policy"
+      ],
+      "latency": 5.3
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "search_policy"
+      ],
+      "parse_failures": 0,
+      "answer": "生鲜商品签收后必须在24小时内提出售后申请，否则将不再受理。请您注意时间限制。",
+      "id": "t16",
+      "question": "生鲜商品签收后，最晚多久内必须提出售后申请？",
+      "expected": [
+        "search_policy"
+      ],
+      "latency": 4.3
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "search_policy"
+      ],
+      "parse_failures": 0,
+      "answer": "跨境商品通常不支持七天无理由退货。依据海关监管要求，商品一经清关即视为境外交易完成。如需退货，请确认商品是否有质量问题。如有质量问题，需在签收后7天内提出，退回需重新报关，周期为15至30个工作日。",
+      "id": "t17",
+      "question": "跨境的商品可以七天无理由退货吗？",
+      "expected": [
+        "search_policy"
+      ],
+      "latency": 6.4
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "search_policy"
+      ],
+      "parse_failures": 0,
+      "answer": "投诉类工单超时后，您可申请 20 元券作为补偿。补偿将以优惠券形式自动发放，不与商家赔偿叠加。",
+      "id": "t18",
+      "question": "投诉类工单超时的补偿是多少？",
+      "expected": [
+        "search_policy"
+      ],
+      "latency": 5.4
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "search_policy"
+      ],
+      "parse_failures": 0,
+      "answer": "预售商品的定金具有担保性质，支付定金即视为锁定购买资格。如果未支付尾款，定金一般是不予退还的。但如果您已经支付了尾款，那么定金将与尾款一并退回，不过定金膨胀部分不予退回。",
+      "id": "t19",
+      "question": "预售付了定金但没付尾款，定金能退吗？",
+      "expected": [
+        "search_policy"
+      ],
+      "latency": 5.7
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "search_policy"
+      ],
+      "parse_failures": 0,
+      "answer": "空调安装超出标配铜管每米收费 90 元。",
+      "id": "t20",
+      "question": "空调安装超出标配铜管，每米收多少钱？",
+      "expected": [
+        "search_policy"
+      ],
+      "latency": 4.2
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "search_policy"
+      ],
+      "parse_failures": 0,
+      "answer": "会员V4需要累计消费20000元才能达到该等级。",
+      "id": "t21",
+      "question": "会员 V4 需要累计消费多少钱？",
+      "expected": [
+        "search_policy"
+      ],
+      "latency": 3.8
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "calculate"
+      ],
+      "parse_failures": 0,
+      "answer": "计算结果是1788.3。",
+      "id": "t22",
+      "question": "帮我算一下 (399 + 289 + 1299) 乘以 0.9 是多少？",
+      "expected": [
+        "calculate"
+      ],
+      "latency": 3.3
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "calculate"
+      ],
+      "parse_failures": 0,
+      "answer": "999元的椅子打八折后是799.2元。",
+      "id": "t23",
+      "question": "999 元的椅子打八折后多少钱？",
+      "expected": [
+        "calculate"
+      ],
+      "latency": 3.0
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "date_diff"
+      ],
+      "parse_failures": 0,
+      "answer": "这两个日期相差 30 天。",
+      "id": "t24",
+      "question": "2026-10-05 到 2026-11-04 相差多少天？",
+      "expected": [
+        "date_diff"
+      ],
+      "latency": 4.3
+    },
+    {
+      "answer_ok": false,
+      "missing": [
+        "2026-10-05",
+        "30"
+      ],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": false,
+      "steps": 3,
+      "tool_calls": [
+        "query_orders",
+        "date_diff"
+      ],
+      "parse_failures": 0,
+      "answer": "订单A2001的签收日期是2026年10月2日，距离2026年11月4日有33天。",
+      "id": "t25",
+      "question": "订单 A2001 是哪天签收的，距离 2026-11-04 有多少天？",
+      "expected": [
+        "query_orders",
+        "date_diff"
+      ],
+      "latency": 10.1
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 3,
+      "tool_calls": [
+        "query_orders",
+        "search_policy"
+      ],
+      "parse_failures": 0,
+      "answer": "订单A2021退款的商品是平板电脑。退款一般在商家同意后48小时内发起，但具体到账时间取决于支付渠道。通常情况下，退款会在7个工作日内到账。",
+      "id": "t26",
+      "question": "订单 A2021 退款的是哪个商品，退款一般多久到账？",
+      "expected": [
+        "query_orders",
+        "search_policy"
+      ],
+      "latency": 8.0
+    },
+    {
+      "answer_ok": false,
+      "missing": [
+        "签收"
+      ],
+      "tool_ok": false,
+      "tool_exact": false,
+      "success": false,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "订单A2007的七天无理由退货期限从2026-10-14开始算起。请您在2026-10-21之前完成退货流程。",
+      "id": "t27",
+      "question": "订单 A2007 的智能手表正在退货中，七天无理由的期限从哪天开始算？",
+      "expected": [
+        "query_orders",
+        "search_policy"
+      ],
+      "latency": 6.8
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": true,
+      "tool_exact": true,
+      "success": true,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "北京地区最贵的一笔订单是订单号A2024，金额为1899.0元，是由许诺购买的。",
+      "id": "t28",
+      "question": "北京的订单里最贵的是哪一笔，谁买的？",
+      "expected": [
+        "query_orders"
+      ],
+      "latency": 5.6
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": false,
+      "tool_exact": false,
+      "success": false,
+      "steps": 2,
+      "tool_calls": [
+        "calculate"
+      ],
+      "parse_failures": 0,
+      "answer": "根据规则，您应该获得209.7元的补偿。",
+      "id": "t29",
+      "question": "订单 A2016 的咖啡机 699 元，如果按 30% 补偿应该赔多少？",
+      "expected": [
+        "query_orders",
+        "calculate"
+      ],
+      "latency": 2.9
+    },
+    {
+      "answer_ok": true,
+      "missing": [],
+      "tool_ok": false,
+      "tool_exact": false,
+      "success": false,
+      "steps": 2,
+      "tool_calls": [
+        "query_orders"
+      ],
+      "parse_failures": 0,
+      "answer": "已签收订单平均每笔金额为536.97元。",
+      "id": "t30",
+      "question": "已签收订单的总金额除以 30 笔，平均每笔多少？",
+      "expected": [
+        "query_orders",
+        "calculate"
+      ],
+      "latency": 5.3
+    }
+  ]
+}

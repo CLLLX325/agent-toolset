@@ -1,0 +1,30 @@
+{"id": "t01", "question": "订单 A2012 买的是什么商品，花了多少钱？", "expected_tools": ["query_orders"], "must_contain": ["人体工学椅", "999"]}
+{"id": "t02", "question": "订单 A2001 的耳机是哪天签收的？", "expected_tools": ["query_orders"], "must_contain": ["2026-10-05"]}
+{"id": "t03", "question": "所有订单里最贵的商品是什么，多少钱？", "expected_tools": ["query_orders"], "must_contain": ["笔记本电脑", "5299"]}
+{"id": "t04", "question": "现在有几笔订单还在运输中？", "expected_tools": ["query_orders"], "must_contain": ["3"]}
+{"id": "t05", "question": "已签收的订单总金额是多少？", "expected_tools": ["query_orders"], "must_contain": ["16109"]}
+{"id": "t06", "question": "北京客户一共有几笔订单，合计多少钱？", "expected_tools": ["query_orders"], "must_contain": ["3", "3297"]}
+{"id": "t07", "question": "上海的客户下过哪几个订单号？", "expected_tools": ["query_orders"], "must_contain": ["A2002", "A2014", "A2026"]}
+{"id": "t08", "question": "所有订单的平均金额是多少？", "expected_tools": ["query_orders"], "must_contain": ["702"]}
+{"id": "t09", "question": "已退款和退货中的订单加起来的总额是多少？", "expected_tools": ["query_orders"], "must_contain": ["4256"]}
+{"id": "t10", "question": "哪几笔订单已经退款了，分别是什么商品？", "expected_tools": ["query_orders"], "must_contain": ["空气炸锅", "平板电脑"]}
+{"id": "t11", "question": "深圳的订单有几笔？", "expected_tools": ["query_orders"], "must_contain": ["3"]}
+{"id": "t12", "question": "现在处于退货中的订单号是哪几个？", "expected_tools": ["query_orders"], "must_contain": ["A2007", "A2016"]}
+{"id": "t13", "question": "订单 A2011 现在是什么状态？", "expected_tools": ["query_orders"], "must_contain": ["已取消"]}
+{"id": "t14", "question": "订单 A2030 现在到哪一步了？", "expected_tools": ["query_orders"], "must_contain": ["运输中"]}
+{"id": "t15", "question": "七天无理由退货的退回运费由谁承担？", "expected_tools": ["search_policy"], "must_contain": ["消费者"]}
+{"id": "t16", "question": "生鲜商品签收后，最晚多久内必须提出售后申请？", "expected_tools": ["search_policy"], "must_contain": ["24小时"]}
+{"id": "t17", "question": "跨境的商品可以七天无理由退货吗？", "expected_tools": ["search_policy"], "must_contain": ["不支持"]}
+{"id": "t18", "question": "投诉类工单超时的补偿是多少？", "expected_tools": ["search_policy"], "must_contain": ["20元"]}
+{"id": "t19", "question": "预售付了定金但没付尾款，定金能退吗？", "expected_tools": ["search_policy"], "must_contain": ["退还"]}
+{"id": "t20", "question": "空调安装超出标配铜管，每米收多少钱？", "expected_tools": ["search_policy"], "must_contain": ["90元"]}
+{"id": "t21", "question": "会员 V4 需要累计消费多少钱？", "expected_tools": ["search_policy"], "must_contain": ["20000"]}
+{"id": "t22", "question": "帮我算一下 (399 + 289 + 1299) 乘以 0.9 是多少？", "expected_tools": ["calculate"], "must_contain": ["1788"]}
+{"id": "t23", "question": "999 元的椅子打八折后多少钱？", "expected_tools": ["calculate"], "must_contain": ["799"]}
+{"id": "t24", "question": "2026-10-05 到 2026-11-04 相差多少天？", "expected_tools": ["date_diff"], "must_contain": ["30"]}
+{"id": "t25", "question": "订单 A2001 是哪天签收的，距离 2026-11-04 有多少天？", "expected_tools": ["query_orders", "date_diff"], "must_contain": ["2026-10-05", "30"]}
+{"id": "t26", "question": "订单 A2021 退款的是哪个商品，退款一般多久到账？", "expected_tools": ["query_orders", "search_policy"], "must_contain": ["平板电脑", "工作日"]}
+{"id": "t27", "question": "订单 A2007 的智能手表正在退货中，七天无理由的期限从哪天开始算？", "expected_tools": ["query_orders", "search_policy"], "must_contain": ["签收"]}
+{"id": "t28", "question": "北京的订单里最贵的是哪一笔，谁买的？", "expected_tools": ["query_orders"], "must_contain": ["A2024", "许诺"]}
+{"id": "t29", "question": "订单 A2016 的咖啡机 699 元，如果按 30% 补偿应该赔多少？", "expected_tools": ["query_orders", "calculate"], "must_contain": ["209"]}
+{"id": "t30", "question": "已签收订单的总金额除以 30 笔，平均每笔多少？", "expected_tools": ["query_orders", "calculate"], "must_contain": ["536"]}
